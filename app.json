@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TennisApp",
-    "slug": "TennisApp",
+    "name": "tennis-pair-maker",
+    "slug": "tennis-pair-maker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
