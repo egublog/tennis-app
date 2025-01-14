@@ -1,3 +1,4 @@
+import { ThemedText } from "@/components/ThemedText";
 import { Link } from "expo-router";
 import { Text, View, StyleSheet } from "react-native";
 
@@ -6,7 +7,7 @@ export default function AboutScreen() {
     <View style={styles.container}>
       <Text style={styles.text}>This is the About screen.</Text>
       <Link href="/" style={styles.button}>
-        <Text>Go to home screen!</Text>
+        <ThemedText type="link">Go to home screen!</ThemedText>
       </Link>
     </View>
   );
@@ -23,7 +24,6 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
   button: {
-    color: "#EF4444",
     marginTop: 20,
   },
 });
