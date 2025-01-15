@@ -1,22 +1,22 @@
-import { View, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { Image } from "expo-image";
+import { ThemedView } from "@/components/ThemedView";
 
 const PlaceholderImage = require("@/assets/images/background-image.png");
 
-export default function Index() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <View style={styles.imageContainer}>
+    <ThemedView style={styles.container}>
+      <ThemedView style={styles.imageContainer}>
         <Image source={PlaceholderImage} style={styles.image} />
-      </View>
-    </View>
+      </ThemedView>
+    </ThemedView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#25292e",
     alignItems: "center",
   },
   imageContainer: {
